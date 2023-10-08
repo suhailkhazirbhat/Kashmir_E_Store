@@ -72,6 +72,24 @@
             position: relative;
 
         }
+        @media only screen and (max-width: 600px) {
+  #left {
+    display: none;
+  }
+  #footWear{
+    display: none;
+  }
+  #imgid{
+    padding-top: 15px;
+    height: 206px !important;
+  }
+  .container-fluid {
+    padding-right: 45px !important;
+    padding-left: 15px;
+    margin-right: 80px !important;
+    margin-left: auto;
+}
+}
     </style>
 
 
@@ -92,41 +110,16 @@
     
     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 38px;">
       <div>
-          <div style="display: flex; justify-content:flex-end; "><div style="padding: 5px;align-items:center;"> Sign In/Jion Ajio &nbsp &nbsp</div> <div style="padding: 5px; ">Costmer Care &nbsp &nbsp</div> <div style="padding: 5px;align-items:center; background-color: black;color: white;">VIST AJIOLUXE</div> </div>
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="display: flex; justify-content:center; padding-left: 20%; ">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">&nbsp &nbsp  MEN </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">&nbsp &nbsp  WOMEN</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">&nbsp &nbsp  KIDS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">&nbsp &nbsp  Home/KITCHEN</a>
-        </li>
-      
-     
-      </ul>
-      <form class="d-flex " style="display: flex; justify-content:flex-end; background-color: FFFDED;" >
-        <input  style="width: 50%; margin-top: 1%; background-color: #FFFDED; border-radius: 25px;"  class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
-        <span style="padding: 5px;" >
-         <img src="https://assets.ajio.com/static/img/wishlistIcon.svg" alt="">
-</span>
-
-                                <span style="padding: 5px;">
-
-                                    <i class="fa fa-archive" style="font-size:35px"></i>
-                                </span>
-                                <div id="addCard">
+          <div style="display: flex; justify-content:flex-end; "><div style="padding: 5px;align-items:center;"> 
+            <span style="padding: 5px;" >
+                <img src="https://assets.ajio.com/static/img/wishlistIcon.svg" alt="">
+       </span></div> 
+            <div style="padding: 5px; ">  <i class="fa fa-archive" style="font-size:35px"></i></div> 
+           <div id="addCard">
 
 
-                                </div>
-                            </form>
-
-
+            </div> </div>
+ 
                         </div>
                 </span>
 
@@ -152,7 +145,7 @@
                 <span>Home</span> &nbsp / &nbsp<span>D2C Fashion</span>
             </nav>
             <div class="row">
-                <div class="left col-xs-12 col-md-3">
+                <div  id="left"  class="left col-xs-12 col-md-3">
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item"
                             style="background-color: white !important; border: 3px solid white;">
@@ -194,7 +187,7 @@
                     </div>
                 </div>
                 <div id="middle" class="middle col-xs-12  col-md-6">
-                    <h1 style="text-align: center;"> FootWear</h1>
+                    <h1 id="footWear" style="text-align: center;"> FootWear</h1>
                     <hr>
                     <div
                         style=" padding-left: 5px; padding-right: 5px; background-color: #F7F7F7; width:100%; display: flex;  justify-content: space-between; height: 0%; align-items: center;">
@@ -247,7 +240,7 @@
             <div class=" col-sm-12     col-md-4 col-lg-3 " ${element.id}>
                             <div class="card card1" style="border:2px solid white">
 
-                                <img src='https://source.unsplash.com/random?${element.id}'
+                                <img id="imgid" src='https://source.unsplash.com/random?${element.id}'
                                     alt="" style="width:100%;
                                     height:50px">
                                 <p style="margin-bottom:0px; color:#C1AE91; text-align: center;">U.S.POLO ASSN.</p>
