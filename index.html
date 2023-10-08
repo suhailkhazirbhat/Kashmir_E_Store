@@ -72,8 +72,13 @@
             position: relative;
 
         }
+        .headerrr{
+           background-color:white;
+            position: fixed;
+             top:0px;width:100%
+        }
         @media only screen and (max-width: 600px) {
-  #left {
+  #left  {
     display: none;
   }
   #footWear{
@@ -89,11 +94,22 @@
     margin-right: 80px !important;
     margin-left: auto;
 }
+#ItemsFound{
+    display: none;
+}
+.container-fluid {
+    /* padding-right: 15px; */
+    /* padding-left: 15px; */
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    justify-content: center !important;
+}
+
 }
     </style>
 
 
-    <header style="background-color:white; position: fixed; top:0px;width:100%">
+    <header class="headerrr">
 
         <nav class="navbar navbar-expand-md navbar-light bg-light" style="background-color: white !important;">
             <div class="container-fluid" style="display: block; ">
@@ -191,7 +207,7 @@
                     <hr>
                     <div
                         style=" padding-left: 5px; padding-right: 5px; background-color: #F7F7F7; width:100%; display: flex;  justify-content: space-between; height: 0%; align-items: center;">
-                        <div>104,252 Items Found</div>
+                        <div id="ItemsFound">104,252 Items Found</div>
                         <div><img src="./imagclip.PNG" alt=""></div>
                         <div><span> SORTED BY <select name="cars" id="cars">
                                     <option value="volvo">Volvo</option>
