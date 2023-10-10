@@ -75,7 +75,10 @@
         .headerrr{
            background-color:white;
             position: fixed;
-             top:0px;width:100%
+             top:0px;
+             width:100%;
+             right: 2px;
+            height: 117px;
         }
         @media only screen and (max-width: 600px) {
   #left  {
@@ -89,9 +92,9 @@
     height: 206px !important;
   }
   .container-fluid {
-    padding-right: 45px !important;
+    padding-right: 45px ;
     padding-left: 15px;
-    margin-right: 80px !important;
+    margin-right: 0px !important;
     margin-left: auto;
 }
 #ItemsFound{
@@ -104,6 +107,43 @@
     /* margin-left: auto; */
     justify-content: center !important;
 }
+#middle{
+    box-shadow: 0px 0px 0px #aaaaaa; 
+}
+#jj{
+    display: block;
+    margin-right: 0px;
+   
+    padding-left: 89px;
+    padding-right: 0px;
+}
+#main{
+    position: fixed;
+    top: 125px;
+    width: 100%;
+    right: 1px;
+    height: 142px;
+}
+#main2{
+    box-shadow: 0px 0px 10px #aaaaaa;
+    padding: 5px;
+    margin-right: 0px;
+    height: 100vh;
+}
+.card1{
+    box-shadow: 0px 0px 10px white;
+    padding: 5px;
+    margin-right: 0px;
+    /* height: 100vh; */
+    background-color: white;
+    border-radius: 2px;
+}
+#clll{
+  padding: 0px !important;
+}
+#my_box{
+    padding: 0px;
+}
 
 }
     </style>
@@ -112,7 +152,7 @@
     <header class="headerrr">
 
         <nav class="navbar navbar-expand-md navbar-light bg-light" style="background-color: white !important;">
-            <div class="container-fluid" style="display: block; ">
+            <div class="container-fluid"  id="jj"style="display: block; ">
                 <a class="navbar-toggler" style="border: none;" style><img style="    width: 111px;
                     height: 77px;" src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt=""></a>
 
@@ -148,9 +188,9 @@
     </header>
 
 
-    <main style="position: fixed;top: 164px; width:100%">
+    <main style="position: fixed;top: 164px; width:100%" id="main">
 
-        <div class="container-fluid" style="box-shadow: 0px 0px 10px #aaaaaa; padding: 5px;">
+        <div class="container-fluid" id="main2" style="box-shadow: 0px 0px 10px #aaaaaa; padding: 5px;">
             <nav aria-label="breadcrumb"
                 style="background-color: white !important; color:rgb(184, 181, 181) !important;">
                 <!-- <ol class="breadcrumb" style="background-color: white !important; color:black !important;">
@@ -253,7 +293,7 @@
             let div = document.createElement('div')
             // console.log(element,'element')
             div.innerHTML = `
-            <div class=" col-sm-12     col-md-4 col-lg-3 " ${element.id}>
+            <div class=" col-sm-12     col-md-4 col-lg-3 " id="clll">
                             <div class="card card1" style="border:2px solid white">
 
                                 <img id="imgid" src='https://source.unsplash.com/random?${element.id}'
